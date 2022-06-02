@@ -15,7 +15,8 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 API_ID = API_ID
 API_HASH = API_HASH 
-
+DB_URL = DB_URL
+SUDO_USERS = SUDO_USERS
 
 
 if not STRING_SESSION1:
@@ -29,6 +30,11 @@ if not API_ID:
 if not API_HASH:
     logging.error("No ApiHash Found! Exiting!")
     quit(1)
+
+if MONGO_DB:
+    MONGO_DB = MONGO_DB
+else: 
+    MONGO_DB = "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
 
 
 
