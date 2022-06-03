@@ -1,4 +1,3 @@
-'''
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -218,4 +217,3 @@ if MONGO_DB:
     db = MongoDatabase(MONGO_DB, SPAMBOT)
 else:
     db = SqliteDatabase(DB_URL)
-'''
