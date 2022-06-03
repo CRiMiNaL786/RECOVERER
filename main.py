@@ -31,11 +31,6 @@ if not API_HASH:
     logging.error("No ApiHash Found! Exiting!")
     quit(1)
 
-if MONGO_DB:
-    MONGO_DB = MONGO_DB
-else: 
-    MONGO_DB = None
-
 
 
 
@@ -51,7 +46,7 @@ START_TIME = datetime.now()
 
 if bot1:
     bot1.start()
-    bot1.join_chat("Murat_30_God")
+    bot1.join_chat("ATGKOFFICIAL")
 
     
 
