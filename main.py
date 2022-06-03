@@ -34,7 +34,7 @@ if not API_HASH:
 if MONGO_DB:
     MONGO_DB = MONGO_DB
 else: 
-    MONGO_DB = "mongodb+srv://mabma:BlackMamba@cluster0.ok5je.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB = None
 
 
 
