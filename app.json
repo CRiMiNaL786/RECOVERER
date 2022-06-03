@@ -1,0 +1,33 @@
+{
+"name": "A Simple Pyrogram-Telegram Userbot sudo enabled",
+"repository": "https://github.com/CRiMiNaL786/RECOVERER",
+"logo": "",
+"keywords": ["python", "pyrogram", "telegram"],
+"env": {
+    "API_ID": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "value": "18306878",
+      "required": "True"
+    },
+    "API_HASH": {
+      "description": "The number of processes to run.",
+      "value": "0af2272c40823f81a514aaadc4a2091d",
+      "required": "True"
+    },
+    "SESSION_STRING1": {
+      "description": "The Session String",
+      "value": "0",
+      "required": "True"
+    },
+    "SUDO_USERS": {
+       "description": "Account controller user id .",
+       "value": "511112479"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
