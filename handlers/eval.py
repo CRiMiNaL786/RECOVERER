@@ -22,7 +22,7 @@ async def aexec(code, client, message):
 @Client.on_message(filters.command(["eval"], [".", "!"]) & filters.me)
 @Client.on_message(filters.command(["eval"], [".", "!"]) & filters.user(SUDOERS))
 async def evaluate(client, message):
-    status_message = await message.edit("`Running ...`")
+    status_message = await message.reply("`Running ...`")
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
     except IndexError:
@@ -129,7 +129,7 @@ async def terminal(client, message):
             )
             os.remove("output.txt")
             return
-        await message.edit(f"**Output:**\n```{output}```", parse_mode="markdown")
+        await message.reply(f"**Output:**\n```{output}```", parse_mode="markdown")
     else:
-        await message.edit("**Output:**\n`No Output`")
+        await message.reply("**Output:**\n`No Output`")
 
