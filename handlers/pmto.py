@@ -1,6 +1,10 @@
+from pyrogram import Client , filters
+import asyncio
+from pyrogram.types import Message
+
 @amaan.on_message(filters.command("pmto", HANDLER) & filters.me)
 @amaan.on_message(filters.command("pmto", HANDLER) & filters.user(SUDOERS))
-async def pmto(client, message):
+async def pmto(c: Client, m: Message):
     a = message.pattern_match.group(1)
     b = a.split(" ")
     chat_id = b[0]
