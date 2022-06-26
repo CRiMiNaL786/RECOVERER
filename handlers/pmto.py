@@ -1,9 +1,10 @@
 from pyrogram import Client , filters
 import asyncio
 from pyrogram.types import Message
+from main import SUDOERS
 
-@amaan.on_message(filters.command("pmto", HANDLER) & filters.me)
-@amaan.on_message(filters.command("pmto", HANDLER) & filters.user(SUDOERS))
+@Client.on_message(filters.command(["pmto", "Pmto"], [".", "!"]) & filters.me)
+@Client.on_message(filters.command(["pmto", "Pmto"], [".", "!"]) & filters.user(SUDOERS))
 async def pmto(c: Client, m: Message):
     a = message.pattern_match.group(1)
     b = a.split(" ")
