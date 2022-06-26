@@ -15,7 +15,6 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 API_ID = API_ID
 API_HASH = API_HASH 
-DB_URL = DB_URL
 SUDO_USERS = SUDO_USERS
 
 
