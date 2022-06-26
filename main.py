@@ -15,7 +15,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 API_ID = API_ID
 API_HASH = API_HASH 
-SUDO_USERS = SUDO_USERS
+SUDOERS = SUDOERS
 
 
 if not STRING_SESSION1:
@@ -51,6 +51,6 @@ if bot1:
 
 idle()
 
-print("🎉 Successfully Deployed 🎉 @Murat_30_God")
-print("Enjoy! Do visit @Murat_30_God")
+print("🎉 Successfully Deployed 🎉")
+print("Enjoy! ⭐")
 
