@@ -19,7 +19,7 @@
       "value": "0",
       "required": "True"
     },
-    "SUDO_USERS": {
+    "SUDOERS": {
        "description": "Account controller user id .",
        "value": "511112479"
     }
