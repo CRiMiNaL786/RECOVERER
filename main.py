@@ -45,7 +45,7 @@ START_TIME = datetime.now()
 
 if bot1:
     bot1.start()
-    bot1.join_chat("ATGKOFFICIAL")
+    bot1.join_chat("DARKKING786")
 
     
 
