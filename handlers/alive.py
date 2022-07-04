@@ -18,7 +18,7 @@ async def alive(c: Client, message: Message):
     text += f"\nPyrogram Version: `{__version__}`"
     text += f"\nCurrent Uptime: `{str(datetime.now() - StartTime).split('.')[0]}`"
     
-    await c.send_message(chat.id, text)
+    await c.send_message(text)
 
 
 #PiNG 
