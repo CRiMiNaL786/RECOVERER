@@ -4,8 +4,11 @@ from pyrogram import filters
 from main import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
+#ALiVE
 
-
+@Client.on_message(filters.command(["alive", "al"], [".", "!"]) & filters.me)
+@Client.on_message(filters.command(["alive", "al"], [".", "!"]) & filters.user(SUDOERS))
+async def alive(c: Client, message: Message):
     await message.delete()
     text="**RECOVERER**\n"
     text += f"\nPython Version: `{version_info[0]}.{version_info[1]}.{version_info[2]}`"
@@ -14,6 +17,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
     
     await c.send_message(chat.id, text)
 
+
+#PiNG 
 
 @Client.on_message(filters.command(["ping", "Ping"], [".", "!"]) & filters.me)
 @Client.on_message(filters.command(["ping", "Ping"], [".", "!"]) & filters.user(SUDOERS))
