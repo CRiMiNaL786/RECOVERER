@@ -7,6 +7,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 #ALiVE
 
+StartTime = datetime.now()
+
 @Client.on_message(filters.command(["alive", "al"], [".", "!"]) & filters.me)
 @Client.on_message(filters.command(["alive", "al"], [".", "!"]) & filters.user(SUDOERS))
 async def alive(c: Client, message: Message):
