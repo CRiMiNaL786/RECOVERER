@@ -17,8 +17,7 @@ async def alive(c: Client, message: Message):
     text += f"\nPython Version: `{version_info[0]}.{version_info[1]}.{version_info[2]}`"
     text += f"\nPyrogram Version: `{__version__}`"
     text += f"\nCurrent Uptime: `{str(datetime.now() - StartTime).split('.')[0]}`"
-    
-    await c.send_message(text)
+    await message.send_text(text)
 
 
 #PiNG 
