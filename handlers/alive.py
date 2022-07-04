@@ -1,6 +1,7 @@
 from datetime import datetime
 from pyrogram import Client
-from pyrogram import filters
+from pyrogram import filters, __version__
+from sys import version_info
 from main import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
