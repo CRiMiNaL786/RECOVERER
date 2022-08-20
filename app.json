@@ -14,7 +14,7 @@
       "value": "0af2272c40823f81a514aaadc4a2091d",
       "required": "True"
     },
-    "SESSION_STRING1": {
+    "STRING_SESSION1": {
       "description": "The Session String",
       "value": "0",
       "required": "True"
